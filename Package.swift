@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-  name: "Apollo",
+  name: "CustomApollo",
   platforms: [
     .iOS(.v12),
     .macOS(.v10_14),
@@ -12,9 +12,9 @@ let package = Package(
     .watchOS(.v5)
   ],
   products: [
-    .library(name: "Apollo", targets: ["Apollo"]),
+    .library(name: "CustomApollo", targets: ["CustomApollo"]),
     .library(name: "ApolloAPI", targets: ["ApolloAPI"]),
-    .library(name: "Apollo-Dynamic", type: .dynamic, targets: ["Apollo"]),
+    .library(name: "Apollo-Dynamic", type: .dynamic, targets: ["CustomApollo"]),
     .library(name: "ApolloCodegenLib", targets: ["ApolloCodegenLib"]),
     .library(name: "ApolloSQLite", targets: ["ApolloSQLite"]),
     .library(name: "ApolloWebSocket", targets: ["ApolloWebSocket"]),
@@ -38,7 +38,7 @@ let package = Package(
   ],
   targets: [
     .target(
-      name: "Apollo",
+      name: "CustomApollo",
       dependencies: [
         "ApolloAPI"
       ],
