@@ -64,7 +64,7 @@ let package = Package(
     .target(
       name: "ApolloSQLite",
       dependencies: [
-        "Apollo",
+        "CustomApollo",
         .product(name: "SQLite", package: "SQLite.swift"),
       ],
       exclude: [
@@ -73,7 +73,7 @@ let package = Package(
     .target(
       name: "ApolloWebSocket",
       dependencies: [
-        "Apollo"
+        "CustomApollo"
       ],
       exclude: [
         "Info.plist"
@@ -81,7 +81,7 @@ let package = Package(
     .target(
       name: "ApolloTestSupport",
       dependencies: [
-        "Apollo",
+        "CustomApollo",
         "ApolloAPI"
       ],
       exclude: [
