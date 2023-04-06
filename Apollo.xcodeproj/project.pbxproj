@@ -2662,7 +2662,7 @@
 				DE100B17287F3FB100BE11C2 /* Documentation.docc */,
 			);
 			name = Apollo;
-			path = Sources/Apollo;
+			path = Sources/CustomApollo;
 			sourceTree = "<group>";
 		};
 		9FC750521D2A532D00458D91 /* ApolloTests */ = {
