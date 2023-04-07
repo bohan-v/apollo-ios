@@ -1,5 +1,5 @@
 #if !COCOAPODS
-import ApolloAPI
+import CustomApolloAPI
 #endif
 
 /// A custom implementation of RequestChain that wraps an ApolloInterceptor instance to provide
@@ -96,7 +96,7 @@ extension ApolloInterceptorReentrantWrapper : ApolloInterceptor {
     request: HTTPRequest<Operation>,
     response: HTTPResponse<Operation>?,
     completion: @escaping (Result<GraphQLResult<Operation.Data>, Error>) -> Void
-  ) where Operation : ApolloAPI.GraphQLOperation {
+  ) where Operation : CustomApolloAPI.GraphQLOperation {
     wrappedInterceptor.interceptAsync(
       chain: self,
       request: request,

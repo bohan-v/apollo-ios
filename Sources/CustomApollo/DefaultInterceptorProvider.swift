@@ -1,5 +1,5 @@
 #if !COCOAPODS
-import ApolloAPI
+import CustomApolloAPI
 #endif
 
 /// The default interceptor provider for typescript-generated code

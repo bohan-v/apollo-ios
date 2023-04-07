@@ -1,6 +1,6 @@
 import Foundation
 #if !COCOAPODS
-import ApolloAPI
+import CustomApolloAPI
 #endif
 
 /// A network transport is responsible for sending GraphQL operations to a server.

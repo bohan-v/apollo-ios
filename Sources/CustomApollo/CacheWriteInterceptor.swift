@@ -1,6 +1,6 @@
 import Foundation
 #if !COCOAPODS
-import ApolloAPI
+import CustomApolloAPI
 #endif
 
 /// An interceptor which writes data to the cache, following the `HTTPRequest`'s `cachePolicy`.

@@ -1,5 +1,5 @@
 #if !COCOAPODS
-import ApolloAPI
+import CustomApolloAPI
 #endif
 
 // MARK: - Basic protocol

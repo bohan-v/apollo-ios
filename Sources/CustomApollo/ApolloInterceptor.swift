@@ -1,5 +1,5 @@
 #if !COCOAPODS
-import ApolloAPI
+import CustomApolloAPI
 #endif
 
 /// A protocol to set up a chainable unit of networking work.

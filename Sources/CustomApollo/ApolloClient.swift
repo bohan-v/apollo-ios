@@ -1,7 +1,7 @@
 import Foundation
 import Dispatch
 #if !COCOAPODS
-import ApolloAPI
+import CustomApolloAPI
 #endif
 
 /// A cache policy that specifies whether results should be fetched from the server or loaded from the local cache.

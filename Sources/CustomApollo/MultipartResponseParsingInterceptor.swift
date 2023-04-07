@@ -1,6 +1,6 @@
 import Foundation
 #if !COCOAPODS
-import ApolloAPI
+import CustomApolloAPI
 #endif
 
 /// Parses multipart response data into chunks and forwards each on to the next interceptor.
@@ -50,7 +50,7 @@ public struct MultipartResponseParsingInterceptor: ApolloInterceptor {
     request: HTTPRequest<Operation>,
     response: HTTPResponse<Operation>?,
     completion: @escaping (Result<GraphQLResult<Operation.Data>, Error>) -> Void
-  ) where Operation : ApolloAPI.GraphQLOperation {
+  ) where Operation : CustomApolloAPI.GraphQLOperation {
 
     guard let response else {
       chain.handleErrorAsync(
